@@ -1,0 +1,550 @@
+
+/* Popup box BEGIN */
+.PopDivClass{
+    padding-top: 5%;
+  text-align: center;
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.PopDivClass .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.PopDivClass > div {
+    background-color: #0C9ED9;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    color:#fff;
+    height: auto;
+    max-width: 600px;
+    min-height: 600px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 50%;
+    
+}
+
+.PopDivClass > div h1 {
+    padding : 30px; 
+    color:#fff ;
+    font-size:xx-large;
+    font-weight: bold;
+    width:70%;
+    text-align:center;
+
+}
+.PopDivClass > div hr {
+    color:#fff ;
+    width:70%;
+    text-align:center;
+
+}
+.popupCloseButton {
+    background-color: #0C9ED9;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #000;
+}
+.PopupBtn {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.PopUpTable{
+  height: 400px; 
+  width:100%;
+  text-align:center;
+}
+.PopUpTable tr{
+
+  font-size: medium;
+}
+.PopUpTable h2{
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+}
+/* Popup box BEGIN */
+
+
+.BtnsArea {
+  height: 40px;
+  text-align: center;
+  
+}
+
+
+
+#overlayLoading {
+  padding-top: 20%;
+  text-align: center;
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.cls-1{
+  font-weight: bold;
+  font-size: 25px;
+}
+.cls-2{
+  font-weight: bold;
+  font-size: 40px;
+  color: green;
+}
+
+.Moreinfo{
+  border:1px solid red; 
+  padding: 10px;
+  color: white;
+  text-align: center;
+ 
+  
+}
+
+.ScoreCHeader{
+  background: linear-gradient(to bottom, #484848 0%, #242424);
+   font-size: large; 
+   color : white; 
+   padding: 10px; 
+   width: 100%; 
+   padding: 5px; 
+   
+}
+
+fieldset {
+    border: 1px solid #000;
+    height: 100px;
+} 
+ 
+ #chart {
+      max-width: 650px;
+      margin: 35px auto;
+    }
+
+.container {
+  width: 100%;
+  height: 480px;
+}
+
+#learn-more {
+  fill-opacity: 0;
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 2;
+  border-radius: 5px;
+  stroke-linejoin: round;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  cursor: pointer;
+}
+#learn-more:hover {
+  fill-opacity: 1;
+}
+#learn-more:hover ~ .learn-more-text {
+  fill: #005fa4;
+}
+
+.learn-more-text {
+  font-family: 'Roboto';
+  fill: #fff;
+  pointer-events: none;
+  font-size: 14px;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.center {
+  fill: #0C9ED9;
+}
+
+.pointer {
+  fill: #fff;
+  stroke: #0C9ED9;
+  stroke-width: 2;
+}
+
+.nav-copy {
+  font-family: 'Roboto';
+  fill: #fff;
+  fill-opacity: 1;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+.nav-copy.changing {
+  fill-opacity: 0;
+}
+
+.service {
+  cursor: pointer;
+}
+.service text {
+  font-size: 14px;
+  font-family: 'Roboto';
+  text-anchor: middle;
+}
+.service .icon-wrapper {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+.service .icon-wrapper, .service .icon-wrapper > * {
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+.service circle {
+  fill: #080808;
+}
+
+.service circle.shadow {
+  fill: #27b6ee;
+  fill-opacity: 0;
+  -webkit-filter: url(#service-shadow);
+          filter: url(#service-shadow);
+}
+.service use {
+  fill: #fff;
+}
+.service text {
+  fill: #4d4d4d;
+}
+ .service:hover .icon-wrapper {
+  -webkit-transform: scale(1.15) translateY(-5px);
+          transform: scale(1.15) translateY(-5px);
+}
+.service:hover .icon-wrapper, .service:hover .icon-wrapper > * {
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+}
+.service:hover .icon-wrapper circle.shadow {
+  fill-opacity: 0.4;
+}
+.service.active text, .service:hover text {
+  fill: #000000;
+  font-weight: bold;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.parent {
+display: grid;
+
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+}
+
+.div1 {  grid-area: 1 / 1 / 5 / 4; }
+.div2 { grid-area: 1 / 4 / 6 / 6; }
+.div3 {  grid-area: 5 / 1 / 6 / 4; }
+
+
+table.Grades {
+  width: 100%;
+ }
+
+table.Grades td, table.Grades th {
+  text-align: center;
+  padding: 3px;
+}
+
+
+.GreenBG {
+    background-color: green;
+}
+.GreenYellowBG {
+    background-color: greenyellow;
+}
+.YellowBG {
+    background-color: yellow;
+}
+.OrangeBG {
+    background-color: orange;
+}
+.RedBG {
+    background-color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    height: 50px;
+    background: linear-gradient(to bottom, #484848 0%, #242424);
+    font-size: large; 
+    color : white; 
+    padding: 5px; 
+}
+.col-month{
+    text-align: center; 
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;  
+}
+
+
+
+/*edit switch button and upload file style*/
+
+
+
+
+#file-input-label {
+	width: 70px;
+	cursor: pointer;
+	background-color: #030303;
+	color: white;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+}
+
+#file-input {
+	display: none;
+}
+
+
+
+
+.can-toggle {
+  position: relative;
+  
+  display: none;
+}
+.can-toggle *, .can-toggle *:before, .can-toggle *:after {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+.can-toggle input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.can-toggle input[type="checkbox"][disabled] ~ label {
+  pointer-events: none;
+}
+.can-toggle input[type="checkbox"][disabled] ~ label .can-toggle__switch {
+  opacity: 0.4;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:before {
+  content: attr(data-unchecked);
+  left: 0;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  content: attr(data-checked);
+}
+.can-toggle label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.can-toggle__label-text{
+  padding: 5px;
+}
+
+
+
+.can-toggle label .can-toggle__switch {
+  position: relative;
+}
+
+.can-toggle label .can-toggle__switch:before {
+  content: attr(data-checked);
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.can-toggle label .can-toggle__switch:after {
+  content: attr(data-unchecked);
+  position: absolute;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  background: white;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch {
+  background-color: #4691f6;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  color: #0C9ED9;
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+  background-color: #4691f6;
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  color: #0C9ED9;
+}
+
+.can-toggle label .can-toggle__switch {
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+          transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+  background: #848484;
+}
+
+
+
+.can-toggle label .can-toggle__switch:before {
+  color: rgba(0, 0, 0, 1);
+}
+.can-toggle label .can-toggle__switch:after {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  color: #777;
+}
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  -webkit-transform: translate3d(65px, 0, 0);
+          transform: translate3d(65px, 0, 0);
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.can-toggle label {
+  font-size: 14px;
+}
+.can-toggle label .can-toggle__switch {
+  height: 36px;
+  -webkit-flex: 0 0 134px;
+      -ms-flex: 0 0 134px;
+          flex: 0 0 134px;
+  border-radius: 4px;
+}
+.can-toggle label .can-toggle__switch:before {
+  left: 67px;
+  font-size: 12px;
+  line-height: 36px;
+  width: 67px;
+  padding: 0 12px;
+}
+.can-toggle label .can-toggle__switch:after {
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  width: 65px;
+  line-height: 32px;
+  font-size: 12px;
+}
+.can-toggle label .can-toggle__switch:hover:after {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.can-toggle--size-small input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-small input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.can-toggle--size-small input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  -webkit-transform: translate3d(44px, 0, 0);
+          transform: translate3d(44px, 0, 0);
+}
+.can-toggle.can-toggle--size-small input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-small input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.can-toggle.can-toggle--size-small label {
+  font-size: 13px;
+}
+.can-toggle.can-toggle--size-small label .can-toggle__switch {
+  height: 28px;
+  -webkit-flex: 0 0 90px;
+      -ms-flex: 0 0 90px;
+          flex: 0 0 90px;
+  border-radius: 2px;
+}
+.can-toggle.can-toggle--size-small label .can-toggle__switch:before {
+  left: 45px;
+  font-size: 10px;
+  line-height: 28px;
+  width: 45px;
+  padding: 0 12px;
+}
+.can-toggle.can-toggle--size-small label .can-toggle__switch:after {
+  top: 1px;
+  left: 1px;
+  border-radius: 1px;
+  width: 44px;
+  line-height: 26px;
+  font-size: 10px;
+}
+
